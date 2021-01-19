@@ -1,7 +1,3 @@
-Git is a distributed version control system.
-
-Git is free software.
-
 # 小结
 
 现在总结一下今天学的两点内容：
@@ -39,3 +35,8 @@ HEAD指向的版本就是当前版本，因此，Git允许我们在版本的历�
 场景2：当你不但改乱了工作区某个文件的内容，还添加到了暂存区时，想丢弃修改，分两步，第一步用命令git reset HEAD &lt;file&gt;，就回到了场景1，第二步按场景1操作。
 
 场景3：已经提交了不合适的修改到版本库时，想要撤销本次提交，参考版本回退一节，不过前提是没有推送到远程库。
+
+git checkout -- test.txt
+git checkout其实是用版本库里的版本替换工作区的版本，无论工作区是修改还是删除，都可以“一键还原”。
+
+$ ssh-keygen -t rsa -C "youremail@example.com"
